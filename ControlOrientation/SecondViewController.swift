@@ -34,15 +34,7 @@ class SecondViewController: UIViewController {
     }
     
     override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
-        if self.orientation == ScreenOrientation.LandscapeLeft {
-            return UIInterfaceOrientationMask.LandscapeLeft
-        
-        }else{
-            return UIInterfaceOrientationMask.Portrait
-        }
-
-        
+        return self.orientation == ScreenOrientation.LandscapeLeft ? UIInterfaceOrientationMask.LandscapeLeft : UIInterfaceOrientationMask.Portrait
     }
-
 
 }
